@@ -11,6 +11,6 @@ A: docker rm CONTAINER_NAME && docker images && docker rmi IMAGE_ID
 5) Re-build the images - this time with names and tags assigned to them.
 A: docker build -t node-demo:latest .
 6) Run new containers based on the re-built images, ensuring that the containers
-      are removed automatically when stopped.
+      are removed automatically when stopped.  
 A:  docker run -p 8000:3000 -d --rm --name nodeApp node-demo:latest 
 
